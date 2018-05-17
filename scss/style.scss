@@ -1,0 +1,58 @@
+/* -----> General <----- */
+@import 'variable';
+@import 'mixins';
+@import 'navigation';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'media-query';
+@import 'button';
+@import 'contact';
+
+
+html {
+	@include boxSizing();
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+}
+body {
+	background: $background-color;
+	color: $default-font-color;
+	font-family: $body-font-family;
+	font-size: $body-font-size;
+	font-weight: $body-font-weight;
+	line-height: $body-line-height;
+	padding: $body-padding;
+	margin: $body-margin;
+}
+img {
+	width: 100%;
+	display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+h5, h3 {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+
+.rbox {
+    background: #eee url(../images/header-back.png) repeat;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.clearfix {
+	clear: both;
+}
